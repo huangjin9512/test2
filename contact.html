@@ -1,173 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 <head>
-    <title>美食城网站模板-模板之家cssmoban.com</title>
-
-    <link rel="stylesheet" href="../../../pro2/default.css">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <title>某某家具设计公司企业官网-模板之家</title>
+    ﻿<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="format-detection" content="telephone=no">
 <meta name="renderer" content="webkit">
-<meta name="author" content="www.cssmoban.com" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate icon" type="image/png" href="images/favicon.png">
+<link rel='icon' href='favicon.ico' type='image/x-ico' />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<link rel="stylesheet" href="default.css">
-
+<link rel="stylesheet" href="css/default.min.css?t=227" />
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="lib/amazeui/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="lib/handlebars/handlebars.min.js"></script>
+<script type="text/javascript" src="lib/iscroll/iscroll-probe.js"></script>
+<script type="text/javascript" src="lib/amazeui/amazeui.min.js"></script>
+<script type="text/javascript" src="lib/raty/jquery.raty.js"></script>
+<script type="text/javascript" src="js/main.min.js?t=1"></script>
 </head>
 <body>
-
 <header>
-    <div class="header-nav">
-        <div role="navigation">
-            <a href="#" rel="home" class="hd-logo" title="美食餐厅"><img src="images/logo.png"></a>
-            <ul class="hd-nav">
-                <li class="search-box-li">
-                    <div><input type="text" name="search-keyword" placeholder="输入关键词" form="search-keyword"><i
-                            class="iconfont search-submit">&#xe617;</i></div>
-                    <i class="search-exit"></i></li>
-                <li><a href="index.html" name="index">网站首页<span><i class="iconfont ">&#xe6aa;</i></span></a></li>
-                <li><a href="about.html" name="about">关于我们<span><i class="iconfont ">&#xe6aa;</i></span></a></li>
-                <li><a href="productlist.html" name="productlist">菜式欣赏<span><i class="iconfont ">&#xe6aa;</i></span></a></li>
-                <li><a href="article.html" name="article">美食资讯<span><i class="iconfont ">&#xe6aa;</i></span></a></li>
-                <li><a href="contact.html" name="contact">在线预订<span><i class="iconfont ">&#xe6aa;</i></span></a></li>
-            </ul>
-
-            <div class="motai"></div>
-            <ul>
-                <li><a><i class="iconfont search-botton">&#xe617;</i></a></li>
-                <li><a>中文</a></li>
-                <li><a>En</a></li>
-                <li><a><i class="iconfont nav-bottom">&#xe61f;</i></a></li>
-            </ul>
-
-        </div>
-        <div class="search-box">
-            <form method="post" action="#" id="search-keyword">
-                <input type="text" name="search-keyword" placeholder="请输入您的内容">
-                <span>
-                    </span>
-            </form>
-
-        </div>
-
-    </div>
-
-    <div class="header-carousel container">
-
-        <div id="myCarousel" class="carousel slide">
-            <!-- 轮播（Carousel）指标 -->
-            <ol class="carousel-indicators">
-
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- 轮播（Carousel）项目 -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images/banner.jpg" style="width:100%;" alt="First slide">
-                </div>
-                <div class="item">
-                    <img src="images/banner2.jpg" style="width:100%;" alt="Second slide">
-                </div>
-                <div class="item">
-                    <img src="images/banner3.jpg" style="width:100%;" alt="Third slide">
-                </div>
+    <div class="header-top">
+        <div class="width-center">
+            <div class="header-logo "><img src="images/logo.png" alt=""></div>
+            <div class="header-title div-inline">
+                <strong>某某家具设计公司</strong>
+                <span>www.cssmoban.com</span>
             </div>
-            <!-- 轮播（Carousel）导航 -->
-            <a class="carousel-control left" href="#myCarousel"
-               data-slide="prev"></a>
-            <a class="carousel-control right" href="#myCarousel"
-               data-slide="next"></a>
+
+            <div class="search-box div-inline">
+                <div class="input-box"><input type="text" name="" placeholder="             请输入关键字"></div>
+                <div class="search-botton"></div>
+            </div>
         </div>
-
     </div>
+    <div class="header-nav">
+        <button class="am-show-sm-only am-collapsed font f-btn" data-am-collapse="{target: '.header-nav'}">Menu <i
+                class="am-icon-bars"></i></button>
+        <nav>
+        <ul class="header-nav-ul am-collapse am-in">
+            <li class="on"><a href="index.html" name="index">首页</a></li>
+            <li><a href="about.html" name="about">关于我们</a></li>
+            <li><a href="productlist.html" name="show">案例展示</a></li>
+            <li><a href="article_list.html" name="new">新闻资讯</a></li>
+            <li><a href="contact.html" name="message">联系我们</a>
+                <div class="secondary-menu">
+
+                    <ul><li><a href="message.html" class="message"></a></li></ul>
+                </div>
+            </li>
+        </ul>
+
+
+
+
+        </nav>
+    </div>
+
 </header>
-<main>
+<div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
+    <ul class="am-slides">
+        <li><img src="images/banner.jpg" alt="" ></li>
+        <li><img src="images/banner.jpg" alt="" ></li>
+        <li><img src="images/banner.jpg" alt="" ></li>
+        <li><img src="images/banner.jpg" alt="" ></li>
+    </ul>
+</div>
+<div>
+    <header class="header-article-list">
+        <div class="contact-left">联系我们</div>
+        <div class="contact-right">
+            <a href="index.html">首页 </a>&#62;<a href="#">联系我们</a>
+        </div>
+    </header>
 
-    <div class="main-head">
-        <p><span>在线预定</span></p>
-    </div>
-    <div class="main-reserve">
-        <form action="#" method="post" id="food-reserve">
-            <ul>
-                <li>
-                    <label for="username">姓名</label>
-                    <input type="text" name="username" id="username">
-                </li>
-                <li>
-                    <label for="phonenumber">电话号码</label>
-                    <input type="text" name="phonenumber" id="phonenumber">
-                </li>
-                <li>
-                    <label for="email">电子邮件</label>
-                    <input type="text" name="email" id="email">
-                </li>
-                <li>
-                    <label for="time">时间</label>
-                    <input type="text" name="time" id="time">
-                </li>
-                <li>
-                    <label for="numberofpeople">人数</label>
-                    <input type="text" name="numberofpeople" id="numberofpeople">
-                </li>
-                <li>
-                    <label for="date">日期</label>
-                    <input type="text" name="date" id="date">
-                </li>
-                <li>
-                    <label for="guestbook">留言</label>
-                    <input type="text" name="guestbook" id="guestbook">
-                </li>
-            </ul>
-            <a class="reserve">预定</a>
-
-        </form>
-    </div>
-
-
-
-</main>
-
-<footer>
+    <main class="contact">
+        <iframe src="map.html" width="636" height="378" frameborder="0" scrolling="no"></iframe>
+        <ul>
+            <li>
+                <span><img src="images/contact1.png"/></span>
+                <h2>联系我们</h2>
+                <p>电话:0714-457878</p>
+            </li>
+            <li>
+                <span><img src="images/contact2.png"/></span>
+                <h2>公司地址</h2>
+                <p>地址:湖北省大冶市大冶大道116号金穗小区B栋201号</p>
+            </li>
+            <li>
+                <span><img src="images/contact3.png"/></span>
+                <h2>电子邮箱</h2>
+                <p>邮箱:123@dayeyunalading.com</p>
+            </li>
+        </ul>
+    </main>
+</div>
+﻿<footer>
     <div>
-        <ul class="footer-top">
-            <li><a href="index.html">网站首页</a></li>
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="productlist.html">菜式欣赏</a></li>
-            <li><a href="article.html">美食资讯</a></li>
-            <li><a href="contact.html">在线预订</a></li>
-        </ul>
-    </div>
-    <div>
-        <ul class="footer-body">
-            <li>
-                <span>电话:</span><span>0714-8868331</span>
-            </li>
-            <li>
-                <span>邮箱:</span><span>123@dayeyunalading.com</span>
-            </li>
-            <li>
-                <span>地址:</span><span>湖北省大冶市XXX大道XXX办公室</span>
-            </li>
-        </ul>
-        <P><span><a href="http://www.haothemes.com/" target="_blank" title="好主题">好主题</a>提供 - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></span></P>
-        <ul class="footer-footer">
-            <li><i class="iconfont ">&#xe613;</i></li>
-            <li><i class="iconfont ">&#xe634;</i></li>
-            <li><i class="iconfont ">&#xe602;</i></li>
-        </ul>
+        <div class="footer-info">
+            <div class="footer-content">
+                <img src="images/qccode.png" alt="">
+               <div>
+                <p>招商热线:0714-8868331</p>
+                <div class="footer-box">
+                    <i class="icon-tel"></i>
+                    <span>公司电话:</span>
+                    <span>0714-8868331</span>
+                </div>
+                <div class="footer-box">
+                    <i class="icon-email"></i>
+                    <span>公司邮箱:</span>
+                    <span>123@dayeyunalading.com</span>
+                </div>
+                <div class="footer-box">
+                    <i class="icon-address"></i>
+                    <span>公司地址:</span>
+                    <span>湖北省XXX市XXX大道小区B栋201</span>
+                </div>
+               </div>
+            </div>
+        </div>
+        <style>
+        .footer-bottom a{color:#F1404B}
+        </style>
+        <div class="footer-bottom"><div style="text-align:center;color:#fff;line-height:100px;"><span><a href="http://www.haothemes.com/" target="_blank" title="好主题">好主题</a>提供 - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></span></div></div>
     </div>
 </footer>
-
-
-
 </body>
-
-<script src="lib/jquery/jquery.js"></script>
-<script src="lib/bootstrap/bootstrap.js"></script>
-<script src="js/main.js"></script>
 </html>
